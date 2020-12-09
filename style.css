@@ -1,0 +1,750 @@
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+@font-face { 
+    font-family: 'BebasNeue';
+    src:url('fonts/BebasNeue Regular.otf');
+}
+body{font-family:'Roboto', sans-serif;}  
+
+/*.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 991px) {
+    
+    #nav {
+        display:none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
+}*/
+
+/* ==========================================================================
+   header section start
+========================================================================== */
+.header_area {
+    background-color: #ed1f24;
+}
+.headerleft h1 {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 16px;
+}
+.headerleft {
+    float: left;
+}
+.headerright {
+        margin: 10px 0 14px 0;
+        float: right;
+}
+.header-links li + li:before {
+    content: "|";
+    color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.header-links {
+    float: right;
+}
+.header-links {
+    margin: 0 50px 0 0; 
+    padding:0px;
+    list-style: none;
+}
+.header-links li {
+    float: left;
+}
+.header-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.header-links li a:hover {
+    color: #2c3690;
+    transition: .4s;
+}
+.header-social {
+    float: right;
+}
+.header-social {
+    margin:0px; 
+    padding:0px;
+    list-style: none;
+}
+.header-social li {
+    float: left;
+    margin-right: 35px;
+}
+.header-social li:last-child {
+    margin: 0px;
+    padding: 0px;
+}
+.header-social li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.header-social li a:hover {
+    color: #2c3690;
+}
+/* ==========================================================================
+   header section end
+========================================================================== */
+
+ /* ==========================================================================
+   menu section start
+========================================================================== */
+.logo {
+    float: left;
+}
+.mainmenu_area {
+    margin: 24px 0 36px 0;
+}
+.menuitem {
+    margin-top: 26px;
+    float: right;
+}
+.mainmenu_area  ul#nav {
+  margin:0px; 
+  padding:0px;
+  list-style: none;
+  float: right;
+}
+.mainmenu_area  ul#nav li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mainmenu_area ul#nav li:last-child {
+   margin-right: 0;
+}
+.mainmenu_area ul#nav li a {
+    color:#000000;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+}
+.mainmenu_area ul#nav li a:hover,
+.mainmenu_area ul#nav li.active a {
+  text-decoration:none;
+  color: #2c3690;
+}
+.mainmenu_area  ul#nav li:before {
+  height:1px;
+  width:100%;
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#2c3690;
+  display:none;
+}
+.mainmenu_area  ul#nav li:hover:before,
+.mainmenu_area  ul#nav li.active:before {
+  display:block;
+}
+/* ==========================================================================
+   menu section end
+========================================================================== */
+
+/* ==========================================================================
+   slider section start
+========================================================================== */
+
+.slider_area {
+    position: relative;
+    z-index: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.slider_area .carousel {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.slider_area .carousel-inner,
+.slider_area .carousel-item {
+    height: 100%;
+}
+.slider_area .carousel-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sliderfrom {
+    color: #FFF;
+    background-color: rgba(44, 54, 144, 0.9);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 23px;
+    padding-bottom: 70px;
+}
+.sliderfrom h1 {
+    font-family: "BebasNeue";
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    padding-bottom: 7px;
+}
+.sliderfrom .box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin:0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sliderfrom .box + .box {
+    margin-top: 14px;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+
+/* Hide the browser's default checkbox */
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.box:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.box input:checked ~ .checkmark {
+    background-color: #ed1f24;
+}
+
+.size {
+    border-radius: 0;
+    margin: 24px 0 19px 0;
+    font-weight: 700;
+}
+
+.buttonsize {
+    color: #fff;
+    background-color: #ED1F24;
+    border-color: #ed1f24;
+    border-radius: 0;
+    padding: 9px 20px 7px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.buttonsize:hover {
+    color: #fff;
+    transition: .4s;
+    background-color: #ED1F76;
+    border-color: #ED1F76;
+}
+
+/* ==========================================================================
+   slider section end
+========================================================================== */
+
+/* ==========================================================================
+   Service section start
+========================================================================== */
+
+.service {
+    padding: 77px 0 70px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.service-item:hover .fa {
+    color: #ed1f24;
+}
+.service-item:hover .btn {
+    background-color: #ed1f24;
+}
+.service-item h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+.service-item i {
+    font-size: 40px;
+    padding: 28px 0 28px 0;
+    color: #2c3690;
+}
+.service-item p {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    list-style: 1px;
+    line-height: 27px;
+    padding-bottom: 29px;
+}
+.servicebutton {
+    font-style: italic;
+    color: #fff;
+    background-color: #2c3690;
+    padding: 3px 10px 3px 10px;
+    border-radius: 0;
+}
+
+/* ==========================================================================
+   Service section end
+========================================================================== */
+
+/* ==========================================================================
+   Testimonials section start
+========================================================================== */
+
+.Testimonials {
+    background-color: #2c3690;
+    text-align: center;
+    color: #fff;
+}
+.Testimonialscontent {
+    padding-bottom: 50px;
+    padding-top: 26px;
+}
+.Testimonialscontent h1 {
+    margin: 0;
+    font-size: 25px;
+    font-style:  italic;
+    font-weight: 700;
+    z-index: 0;
+    position: relative;
+}
+.Testimonialscontent h1:before {
+    content: " ";
+    height: 2px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.Testimonialscontent h1 span {
+    background: #2c3690;
+    padding: 0px 30px 0 30px;
+}
+.Testimonialscontent img {
+    border-radius: 50%;
+    padding: 40px 0 35px 0;
+}
+.Testimonialscontent p {
+    margin: 0;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+.Testimonialscontent h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 30px 0 12px;
+}
+.Testimonialscontent h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 0;
+    position: relative;
+}
+.Testimonialscontent h3:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #ed1f24;
+}
+/* ==========================================================================
+   Testimonials section end
+========================================================================== */
+
+/* ==========================================================================
+   footer_areatop section start
+========================================================================== */
+.footermenu {
+  padding-top: 44px;
+}
+.footermenu  ul#footermenustyle {
+  margin:0px; 
+  padding:0px;
+  list-style: none;
+  text-align: center;
+}
+.footermenu  ul#footermenustyle li {
+    display: inline-block;
+}
+#footermenustyle li + li:before {
+    content: "|";
+    margin-left: 3px;
+    margin-right: 7px;
+    color: #555;
+}
+.footermenu ul#footermenustyle li a {
+    color: #000000;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footermenu ul#footermenustyle li a:hover {
+  text-decoration:none;
+  color: #2c3690;
+}
+
+/* ==========================================================================
+   footer_areatop section end
+========================================================================== */
+
+/* ==========================================================================
+   footer_areabootom section start
+========================================================================== */
+
+.footer_areabootom {
+    text-align: center;
+    padding: 23px 0 48px 0;
+}
+.footerbottomcontent {
+
+}
+.footerbottomcontent img {
+
+}
+.footerbottomcontent h1 {
+    font-style:italic;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding-top: 16px;
+}
+/* ==========================================================================
+   footer_areabootom section end
+========================================================================== */
+
+/* ==========================================================================
+   aboutbody section start
+========================================================================== */
+
+.aboutslider {
+    padding: 115px 0 104px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aboutslider img {
+    
+}
+.aboutslider h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ed1f24;
+    font-weight: 700;
+    margin: 0;
+}
+.aboutslider h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2c3690;
+    font-weight: 700;
+}
+.aboutbodycontent {
+    padding: 60px 0 90px 0;
+}
+.aboutbodycontent img{
+    padding: 0 30px 26px 0;
+    float: left;
+}
+.aboutbodycontent h1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 22px;
+    text-align: justify;
+    margin: 0;
+    padding-bottom: 17px;
+}
+.aboutbodycontent p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 22px;
+    text-align: justify;
+    margin: 0;
+   padding-bottom: 21px;
+}
+
+/* ==========================================================================
+   aboutbody section end
+========================================================================== */
+
+/* ==========================================================================
+   Networks section start
+========================================================================== */
+.Networksservice {
+    padding-top: 57px;
+    padding-bottom: 44px; 
+}
+.Networksservice h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2c3690;
+    padding-bottom: 23px;
+}
+.Networksservice p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    padding-bottom: 45px;
+    text-align: justify;
+}
+.Networksservice ul {
+    list-style: none;
+}
+.Networksservice ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    text-decoration: none;
+}
+.Networksservicepic img {
+    margin: 0;
+    padding: 103px 0 0px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==========================================================================
+   Networks section end
+========================================================================== */
+
+/* ==========================================================================
+   Contact section start
+========================================================================== */
+
+.Contacttop {
+    padding: 56px 0 52px;
+}
+.Contacttop h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2c3690;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.Contacttop p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    text-align: justify;
+}
+.Contactbottom {
+    padding: 5px 0 44px 0;
+}
+.Contactbottomright h1, 
+.Contactbottomleft h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000007;
+    padding-bottom: 25px;
+}
+.Contactbottomright ul,
+.Contactbottomleft ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 42px;
+}
+.Contactbottomright ul li,
+.Contactbottomleft ul li {
+   margin-bottom: 2px;
+}
+.Contactbottomright ul li a,
+.Contactbottomleft ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    text-decoration: none;
+}
+/* ==========================================================================
+   Contact section end
+========================================================================== */
+
+/* ==========================================================================
+   /* ==========================================================================
+   Contact section end
+========================================================================== */
+.Servicesarea h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2c3690;
+    text-transform: uppercase;
+    padding: 55px 0 19px;
+}
+.Servicesarea p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   Contact section end
+========================================================================== */
+
+/* ==========================================================================
+   Servicebottom section start
+========================================================================== */
+
+.Servicebottom  {
+    padding: 42px 0 59px;
+}
+.Servicebottom ul { 
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.Servicebottom ul li {
+    padding-bottom: 9px;
+}
+.Servicebottom a {
+    color: #444444;
+    display: block;
+    padding-left: 19px;
+    background-image: url(img/Serviceslogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    text-decoration: none;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   Servicebottom section end
+========================================================================== */
+
+
+/* ==========================================================================
+   Media Queries
+========================================================================== */
+@media screen and (max-width: 991px) {
+
+    .mainmenu_area {
+    margin-bottom: 14px;
+}
+
+.logo {
+    float: none;
+    text-align: center;
+}
+.slider_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .header-links {
+        margin-right: 0;
+    }
+    .header-social {
+    display: none;
+}
+.mainmenu_area ul#nav li {
+    margin-right: 3px;
+}
+.mainmenu_area ul#nav li a {
+    font-size: 13px;
+}
+.menuitem {
+    margin-top: 10px;
+}
+.aboutbodycontent img {
+    padding: 0 0px 26px 0;
+    float: none;
+}
+.Networksservicepic img {
+    padding: 0px;
+}
+.sliderfrom {
+    width: 300px;
+    float: right;
+}
+}
+
+@media screen and (max-width: 480px) {
+.menuitem {
+    text-align: center;
+}
+.mainmenu_area ul#nav li {
+    margin-right: 22px;
+}
+.mainmenu_area ul#nav li a {
+    font-size: 14px;
+}
+.Networksservice {
+    text-align: center;
+}
+}
